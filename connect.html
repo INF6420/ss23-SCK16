@@ -26,12 +26,14 @@
             <h2> Say Hi!</h2>
             <p> Have any questions for me? Want to learn more about the skills that I've acquired from working in a library environment? Want to know more about what kind of work I've been focusing on in grad school? Or perhaps just say hi? I would love to hear from you in any of those circumstances. Feel free to use this form on the right if you so desire.</p>
         </div>
-        <form>
-            <legend><b>Contact</b></legend>
-            <input type="text" name="fullname" placeholder="Full name">
-            <input type="text" name="email" placeholder="Email">
-            <textarea name="msg" placeholder="Write message here"></textarea>
-            <input type="submit" value="Submit">
+        <form action="https://formspree.io/f/xwkdknrp" method="post" class="validate">
+            <label for="name">Your Name</label>
+            <input name="name" id="name" type="text" class="form-input">
+            <label for="email">Your Email</label>
+            <input name="Email" id="email" type="email" class="form-input" required>
+            <label for="message">Your Message</label>
+            <textarea name="message" name="message" class="form-input" required></textarea>
+            <button type="submit">Submit</button>
         </form>
       </div>  
     </main>
@@ -46,5 +48,6 @@
             <a href="https://www.facebook.com/profile.php?id=100080221086717"><i  class="fa-brands fa-facebook"></i></a>
         </div>     
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
